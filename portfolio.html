@@ -16,7 +16,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+   
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -276,7 +277,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="social-list">
           <h3 class="join">приєднуйтесь</h3>
           <ul class="soc-links list">
             <li class="soc-links-items">
@@ -308,6 +309,27 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscribe">
+          <h3 class="join">Підпишіться на розсилку</h3>
+          <div class="subscribe-field">
+            <form action="e-mail">
+              <input
+                class="subscribe-email"
+                type="email"
+                name="e-mail"
+                id="e-mail"
+                placeholder="E-mail"
+              />
+            </form>
+            <button class="confirmation-button" type="button">
+              Підписатися
+              <svg class="send-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
