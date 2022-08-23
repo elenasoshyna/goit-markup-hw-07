@@ -1,11 +1,11 @@
-.works-list {
+.works {
   display: flex;
   flex-wrap: wrap;
 }
 img {
   display: block;
 }
-.works-card {
+.works__card {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -27,7 +27,7 @@ img {
 .thumb {
   overflow: hidden;
 }
-.card-text {
+.works__text {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -50,17 +50,17 @@ img {
   overflow: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .works-card:hover & {
+  .works__card:hover & {
     transform: translateY(0);
   }
 }
 
-.works-description {
+.works__description {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
 }
-.works-title {
+.works__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -69,7 +69,7 @@ img {
   margin-top: 0;
   margin-bottom: 4px;
 }
-.works-type {
+.works__type {
   font-size: 16px;
   line-height: 1.87;
   margin-top: 0;

@@ -14,9 +14,7 @@
   color: #ffffff;
   padding-bottom: 20px;
 }
-.soc-links-items {
-  display: flex;
-}
+
 .address,
 .contacts-footer a {
   font-style: normal;
@@ -36,6 +34,10 @@
   display: block;
   margin-top: 9px;
 }
+.social-list {
+  margin-right: 93px;
+} 
+
 .join {
   font-weight: 700;
   font-size: 14px;
@@ -46,7 +48,7 @@
 
   margin-bottom: 20px;
 }
-.soc-links-link.in-footer {
+.social__link.in-footer {
   background-color: rgba(255, 255, 255, 0.1);
 
   &:hover,
@@ -55,18 +57,16 @@
   }
 }
 
-.soc-link-item.in-footer {
+.social__image.in-footer {
   fill: #ffffff;
 }
-.social-list {
-  margin-right: 93px;
-}
-.subscribe-field {
+
+.subscribe__field {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.subscribe-email {
+.subscribe__email {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -80,7 +80,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
-.subscribe button {
+.subscribe__button {
   display: flex;
   justify-content: center;
   align-items: center;
