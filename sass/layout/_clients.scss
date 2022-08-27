@@ -1,21 +1,32 @@
 .section-client {
-  padding: 94px 0;
+  padding: 94px 15px;
+  @media screen and (max-width: 1199px) {
+    padding: 60px 15px;
+  }
 }
 .clients {
   display: flex;
   justify-content: center;
+  margin: -15px;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
-.clients__image {
-  fill: currentColor;
-}
+.client {
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
 
-.clients__logo:not(:last-child) {
-  margin-right: 30px;
+  @include tablet {
+    width: calc((100% - 90px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {
   background-color: #fff;
-  width: 170px;
+
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -31,4 +42,8 @@
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
   }
+}
+
+.clients__image {
+  fill: currentColor;
 }

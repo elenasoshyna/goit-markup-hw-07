@@ -1,5 +1,6 @@
 @import "./utils/var";
 @import "./utils/hidden";
+@import "./utils/mixin";
 
 @import "./components/body";
 @import "./components/container";
@@ -7,6 +8,7 @@
 @import "./components/reset";
 @import "./components/sectiontitle";
 @import "./components/modal";
+@import "./components/img";
 
 @import "./layout/header";
 @import "./layout/hero";
